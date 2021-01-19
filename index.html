@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="root">
+    <!-- Контейнер для созданных карточек-->
+    <div class="container"></div>
+
+    <!-- Шаблон карточки нового места -->
+    <template>
+        <li class="element">
+            <figure class="element__figure">
+                <img class="element__image" src="#" alt="Alt">
+                <figcaption class="element__caption">
+                    <h2 class="element__heading"></h2>
+                    <button class="element__like" type="button"></button>
+                </figcaption>
+            </figure>
+            <button class="element__delete" type="button"></button>
+        </li>
+    </template>
+
+    <script type="module" src="./2_composeCard_to_class.js"></script>
+
+</body>
+
+</html>
