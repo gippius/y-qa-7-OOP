@@ -2,18 +2,18 @@ class Card {
     // свойство, обозначенное приватным
     // _isLiked
     // приватное свойство
-    // #isLiked;
+    #isLiked;
 
     constructor({ isLiked }) {
         // console.log(`Создаем экземпляр класса, входные параметры для конструктора:`)
         // console.log(argument)
         // в момент создания экземпляра класса создается свойство с нужным значением
-        this.isLiked = isLiked;
+        this.#isLiked = isLiked;
     }
 
-    toggleLike() {
+    _toggleLike() {
         // метод обращается к свойству класса и меняет его
-        this.isLiked = !this.isLiked;
+        this.#isLiked = !this.#isLiked;
         console.log(this)
     }
 }

@@ -34,3 +34,10 @@ export class Card {
         return this._element;
       }
 }
+
+// забираем разметку из HTML и клонируем элемент
+function _getTemplate() {
+    const cardTemplate = document.querySelector(this._cardSelector).content.querySelector('.card').cloneNode(true);
+    // вернём DOM-элемент карточки
+    return cardTemplate;
+  }
